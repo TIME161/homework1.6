@@ -8,6 +8,7 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
     }
 
     public static void task1() {
@@ -43,6 +44,15 @@ public class Main {
         int payPerMont = 29000;
         int countInBank = 0;
         for (int i = 1; i <= 12; i++) {
+            countInBank = countInBank + payPerMont;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + countInBank + " рублей.");}
+    }
+    public static void task9() {
+        System.out.println("Задача 9");
+        int payPerMont = 29000;
+        int countInBank = 0;
+        for (int i = 1; i <= 12; i++) {
+            countInBank = countInBank + countInBank / 100;
             countInBank = countInBank + payPerMont;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + countInBank + " рублей.");}
     }
